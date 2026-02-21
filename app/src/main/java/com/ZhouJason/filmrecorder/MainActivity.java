@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView rvFilmRolls;
     private Button btnAddRoll;
     private Button btnSort;
+    private Button btnMap;
     private List<FilmRoll> rollList = new ArrayList<>(); // 确保这里初始化了
     private FilmRollAdapter adapter;
     private boolean isSortAscending = false; // 默认从旧到新（升序）
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         rvFilmRolls = findViewById(R.id.rvFilmRolls);
         btnAddRoll = findViewById(R.id.btnAddRoll);
         btnSort = findViewById(R.id.btnSort);
+        btnMap = findViewById(R.id.btnMap);
 
         rvFilmRolls.setLayoutManager(new LinearLayoutManager(this));
 
@@ -57,6 +59,11 @@ public class MainActivity extends AppCompatActivity {
             isSortAscending = !isSortAscending;
             btnSort.setText(isSortAscending ? "时间↓" : "时间↑");
             loadRollsFromDatabase();
+        });
+
+        btnMap.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, MapActivity.class);
+            startActivity(intent);
         });
 
         loadRollsFromDatabase();

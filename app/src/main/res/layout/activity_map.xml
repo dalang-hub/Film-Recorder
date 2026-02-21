@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorSurface"
+        android:elevation="2dp">
+        
+        <TextView
+            android:id="@+id/txtFilterLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="全部 〱"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+        
+    </androidx.appcompat.widget.Toolbar>
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+        
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnZoomIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_zoom_in"
+            app:tint="@android:color/white"
+            app:backgroundTint="@color/colorPrimary"
+            app:elevation="4dp"
+            android:contentDescription="放大" />
+        
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnZoomOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_zoom_out"
+            app:tint="@android:color/white"
+            app:backgroundTint="@color/colorPrimary"
+            app:elevation="4dp"
+            android:contentDescription="缩小" />
+        
+    </LinearLayout>
+
+</RelativeLayout>
