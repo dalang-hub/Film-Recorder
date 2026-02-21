@@ -1,0 +1,41 @@
+><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="filmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B2B2B"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </linearGradient>
+    <radialGradient id="lensGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="70%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#filmGradient)"/>
+  
+  <!-- Film strip perforations - abstracted as rhythm -->
+  <g opacity="0.6">
+    <rect x="96" y="160" width="16" height="32" rx="8" fill="#FFFFFF"/>
+    <rect x="96" y="224" width="16" height="32" rx="8" fill="#FFFFFF"/>
+    <rect x="96" y="288" width="16" height="32" rx="8" fill="#FFFFFF"/>
+    <rect x="96" y="352" width="16" height="32" rx="8" fill="#FFFFFF"/>
+    
+    <rect x="400" y="160" width="16" height="32" rx="8" fill="#FFFFFF"/>
+    <rect x="400" y="224" width="16" height="32" rx="8" fill="#FFFFFF"/>
+    <rect x="400" y="288" width="16" height="32" rx="8" fill="#FFFFFF"/>
+    <rect x="400" y="352" width="16" height="32" rx="8" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Central frame - abstracted as viewport -->
+  <rect x="160" y="160" width="192" height="192" rx="24" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.8"/>
+  
+  <!-- Camera lens - reduced to essential circle -->
+  <circle cx="256" cy="256" r="64" fill="url(#lensGradient)" opacity="0.9"/>
+  <circle cx="256" cy="256" r="48" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.6"/>
+  <circle cx="256" cy="256" r="32" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+  <circle cx="256" cy="256" r="16" fill="#FFFFFF" opacity="0.3"/>
+  
+  <!-- App name as architectural element -->
+  <text x="256" y="480" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" text-anchor="middle" opacity="0.7">FR</text>
+</svg>

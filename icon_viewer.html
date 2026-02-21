@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmRecorder App Icon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        svg {
+            width: 512px;
+            height: 512px;
+            border-radius: 112px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin: 0 0 10px 0;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background-color: #007AFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #0051D5;
+        }
+        .instructions {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f8f8;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .instructions h2 {
+            font-size: 20px;
+            margin: 0 0 15px 0;
+            color: #333;
+        }
+        .instructions ol {
+            padding-left: 20px;
+            margin: 0;
+        }
+        .instructions li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="filmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#2B2B2B"/>
+                    <stop offset="100%" stop-color="#0A0A0A"/>
+                </linearGradient>
+                <radialGradient id="lensGradient" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#1A1A1A"/>
+                    <stop offset="70%" stop-color="#0A0A0A"/>
+                    <stop offset="100%" stop-color="#000000"/>
+                </radialGradient>
+            </defs>
+            
+            <!-- Background -->
+            <rect width="512" height="512" rx="112" fill="url(#filmGradient)"/>
+            
+            <!-- Film strip perforations - abstracted as rhythm -->
+            <g opacity="0.6">
+                <rect x="96" y="160" width="16" height="32" rx="8" fill="#FFFFFF"/>
+                <rect x="96" y="224" width="16" height="32" rx="8" fill="#FFFFFF"/>
+                <rect x="96" y="288" width="16" height="32" rx="8" fill="#FFFFFF"/>
+                <rect x="96" y="352" width="16" height="32" rx="8" fill="#FFFFFF"/>
+                
+                <rect x="400" y="160" width="16" height="32" rx="8" fill="#FFFFFF"/>
+                <rect x="400" y="224" width="16" height="32" rx="8" fill="#FFFFFF"/>
+                <rect x="400" y="288" width="16" height="32" rx="8" fill="#FFFFFF"/>
+                <rect x="400" y="352" width="16" height="32" rx="8" fill="#FFFFFF"/>
+            </g>
+            
+            <!-- Central frame - abstracted as viewport -->
+            <rect x="160" y="160" width="192" height="192" rx="24" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.8"/>
+            
+            <!-- Camera lens - reduced to essential circle -->
+            <circle cx="256" cy="256" r="64" fill="url(#lensGradient)" opacity="0.9"/>
+            <circle cx="256" cy="256" r="48" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.6"/>
+            <circle cx="256" cy="256" r="32" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+            <circle cx="256" cy="256" r="16" fill="#FFFFFF" opacity="0.3"/>
+            
+            <!-- App name as architectural element -->
+            <text x="256" y="480" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" text-anchor="middle" opacity="0.7">FR</text>
+        </svg>
+        
+        <h1>FilmRecorder App Icon</h1>
+        <p>
+            This icon follows the <strong>Geometric Memory</strong> design philosophy—abstracting analog photography into pure geometric form while maintaining the essence of film-based image making.
+        </p>
+        
+        <div class="instructions">
+            <h2>图标设计理念</h2>
+            <ol>
+                <li><strong>几何抽象：</strong>将胶片、相机等元素简化为基本的几何形状</li>
+                <li><strong>节奏感：</strong>圆角矩形模拟胶片齿孔，创造视觉节奏</li>
+                <li><strong>深度层次：</strong>径向渐变和同心圆模拟镜头光学系统</li>
+                <li><strong>极简色彩：</strong>黑白主色调体现摄影本质，具有现代感</li>
+                <li><strong>清晰识别：</strong>即使在最小尺寸下也能保持清晰可识别</li>
+            </ol>
+        </div>
+        
+        <p style="margin-top: 25px; font-size: 14px; color: #999;">
+            提示：右键点击图标可以保存为PNG文件
+        </p>
+    </div>
+</body>
+</html>

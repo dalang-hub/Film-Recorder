@@ -1,0 +1,57 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- 背景 -->
+    <path
+        android:fillColor="#2B2B2B"
+        android:pathData="M0,0h512v512h-512z"/>
+
+    <!-- 左侧齿孔 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.6"
+        android:pathData="M96,160h16v32h-16z M96,224h16v32h-16z M96,288h16v32h-16z M96,352h16v32h-16z"/>
+
+    <!-- 右侧齿孔 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.6"
+        android:pathData="M400,160h16v32h-16z M400,224h16v32h-16z M400,288h16v32h-16z M400,352h16v32h-16z"/>
+
+    <!-- 外框 -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeAlpha="0.8"
+        android:fillColor="#00000000"
+        android:pathData="M160,160h192v192h-192z"/>
+
+    <!-- 镜头 - 简化版圆形 -->
+    <path
+        android:fillColor="#1A1A1A"
+        android:pathData="M192,256a64,64 0 1,0 128,0a64,64 0 1,0 -128,0"/>
+    
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeAlpha="0.6"
+        android:fillColor="#00000000"
+        android:pathData="M208,256a48,48 0 1,0 96,0a48,48 0 1,0 -96,0"/>
+    
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.4"
+        android:fillColor="#00000000"
+        android:pathData="M224,256a32,32 0 1,0 64,0a32,32 0 1,0 -64,0"/>
+
+    <!-- FR 文字 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.7"
+        android:pathData="M235,465h8l9,20l9,-20h8l-13,28h-8l-13,-28z M280,465h7v28h-7z M297,465h15c7,0 12,2 15,6c3,4 5,9 5,15c0,6 -2,11 -5,15c-3,4 -8,6 -15,6h-15v-28z M297,472v14h8c4,0 7,-1 8,-3c1,-2 2,-4 2,-7c0,-3 -1,-5 -2,-7c-1,-2 -4,-3 -8,-3h-8z"/>
+
+</vector>

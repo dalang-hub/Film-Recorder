@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Google Maps Inspired Color Palette -->
+    
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#4285F4</color>
+    <color name="colorPrimaryDark">#3367D6</color>
+    <color name="colorPrimaryLight">#8AB4F8</color>
+    <color name="colorAccent">#34A853</color>
+    
+    <!-- Alert/Warning/Delete Colors -->
+    <color name="colorError">#EA4335</color>
+    <color name="colorWarning">#FBBC05</color>
+    
+    <!-- Background Colors -->
+    <color name="colorBackground">#F8F9FA</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorSurfaceVariant">#F8F9FA</color>
+    
+    <!-- Text Colors -->
+    <color name="textPrimary">#202124</color>
+    <color name="textSecondary">#5F6368</color>
+    <color name="textHint">#80868B</color>
+    
+    <!-- Border & Divider Colors -->
+    <color name="borderColor">#E8EAED</color>
+    <color name="dividerColor">#DADCE0</color>
+    
+    <!-- Shadow & Elevation -->
+    <color name="shadow">#1A000000</color>
+    
+    <!-- Icon Colors -->
+    <color name="iconPrimary">#5F6368</color>
+    <color name="iconActive">#4285F4</color>
+    
+    <!-- Button Colors -->
+    <color name="buttonPrimary">#4285F4</color>
+    <color name="buttonPrimaryHover">#3367D6</color>
+    <color name="buttonSuccess">#34A853</color>
+    <color name="buttonSuccessHover">#2D9148</color>
+    <color name="buttonDelete">#EA4335</color>
+    <color name="buttonDeleteHover">#D23C2F</color>
+    
+    <!-- Ripple Effects -->
+    <color name="ripplePrimary">#1A4285F4</color>
+    <color name="rippleSuccess">#1A34A853</color>
+    <color name="rippleDelete">#1AEA4335</color>
+    
+</resources>

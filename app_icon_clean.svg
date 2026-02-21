@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="512" height="512" rx="112" fill="#2B2B2B"/>
+  
+  <!-- 左侧齿孔 -->
+  <g fill="#FFFFFF" opacity="0.6">
+    <rect x="96" y="160" width="16" height="32" rx="8"/>
+    <rect x="96" y="224" width="16" height="32" rx="8"/>
+    <rect x="96" y="288" width="16" height="32" rx="8"/>
+    <rect x="96" y="352" width="16" height="32" rx="8"/>
+  </g>
+  
+  <!-- 右侧齿孔 -->
+  <g fill="#FFFFFF" opacity="0.6">
+    <rect x="400" y="160" width="16" height="32" rx="8"/>
+    <rect x="400" y="224" width="16" height="32" rx="8"/>
+    <rect x="400" y="288" width="16" height="32" rx="8"/>
+    <rect x="400" y="352" width="16" height="32" rx="8"/>
+  </g>
+  
+  <!-- 中央框架 -->
+  <rect x="160" y="160" width="192" height="192" rx="24" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.9"/>
+  
+  <!-- 镜头外圈 -->
+  <circle cx="256" cy="256" r="64" fill="#1A1A1A" opacity="0.9"/>
+  
+  <!-- 镜头中圈 -->
+  <circle cx="256" cy="256" r="48" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/>
+  
+  <!-- 镜头内圈 -->
+  <circle cx="256" cy="256" r="32" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.5"/>
+  
+  <!-- FR 文字 -->
+  <text x="256" y="480" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" text-anchor="middle" opacity="0.7">FR</text>
+</svg>
